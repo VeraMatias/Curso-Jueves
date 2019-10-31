@@ -1,0 +1,52 @@
+@import url('./fuentes/styles.css');
+
+body{
+    background: #F7F9F9;
+    margin-left: 10px;
+}
+
+h1{
+    font-family: 'Dancing';
+    text-align: center;
+    font-size: 30px;
+}
+
+a{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul a{
+    font-family:'Lato';  
+    text-decoration: none;  
+    font-weight: 500;
+    font-size: 15px;
+
+    background: salmon;
+    display: block;
+    width: 105px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+ ul a:hover{
+    background: red;
+    color: white;
+}
+
+h3{
+    font-family:'Lato';   
+    font-weight: 700;
+    font-size: 20px;
+}

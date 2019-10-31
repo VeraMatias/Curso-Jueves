@@ -1,0 +1,118 @@
+@import url('../styles.css');
+
+p{
+    font-family: 'Dancing';
+    font-weight: 100;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+div{
+    display: block;
+    width: 200px;
+    padding: 10px;
+    background-color: orangered;
+    color: #fff;
+    margin-left: 30px;
+    cursor: default;
+    margin-bottom: 5px;
+}
+
+.transicion:hover{
+    background-color: blue;
+    transition-duration: 2s;
+}
+
+.rotate:hover{
+    transition: all 2s linear;
+    transform: rotate(360deg);
+}
+.keyframe{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+    form{
+        transform: (0deg);
+    }
+    to{
+        transform: rotate(360deg);
+        background-color: blue;
+    }
+}
+
+.bounce{
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale (1)
+    }
+}
+
+.cartel-roto {
+    animation-name: cartel;
+    animation-duration: 2s;
+    transform-origin: 0 0;
+  }
+  
+  @keyframes cartel {
+    0% {
+      transform: rotate(90deg);
+    }
+    10% {
+      transform: rotate(10deg);
+    }
+    20% {
+      transform: rotate(80deg);
+    }
+    30% {
+      transform: rotate(20deg);
+    }
+    40% {
+      transform: rotate(70deg);
+    }
+    50% {
+      transform: rotate(30deg);
+    }
+    60% {
+      transform: rotate(60deg);
+    }
+    100% {
+      transform: rotate(60deg);
+    }
+  }
+  
+  
+  .reverse, .reverse2 {
+    animation-name: reverse;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .reverse2 {
+    animation-direction: reverse;
+  }
+  @keyframes reverse {
+    from  {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(45deg);
+    }
+  }
+
+  .margen-izq{
+      margin-left: 250px;
+  }

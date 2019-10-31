@@ -1,0 +1,35 @@
+@import url('../styles.css');
+
+@font-face{
+    font-family: 'Lato';
+    /*src: url(./fuentes/Lato/Lato-Regular.ttf) format('truetype');*/
+
+    src: url(./Lato/Lato-Regular.woff2) format('woff2'),
+    url(./fuentes/Lato/Lato-Italic.ttf) format('truetype');
+    font-weight: 400;
+
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Dancing';
+
+    src: url(./Dancing_Script/DancingScript-Regular.ttf) format('truetype');
+
+    font-weight: 400;
+}
+
+
+h1{
+    font-family:'Lato'; 
+    text-align: left;   
+}
+
+h2{
+    font-family:'Dancing'; 
+}
+
+h3{
+    font-family:'Dancing'; 
+    font-weight: 100;  
+}

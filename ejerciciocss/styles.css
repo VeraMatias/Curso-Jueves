@@ -1,0 +1,51 @@
+@import url('../styles.css');
+
+.contenedor{
+    margin-top: 10px;
+    background-color: #fff;
+    border: 5px solid #000;
+    padding: 5px;
+    height: 700px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 15px;
+
+    /*Definir flujo de la grid implicita*/
+    grid-auto-flow: row;
+    grid-auto-rows: 25px; 
+
+}
+
+.item{
+    text-align: center;
+    background-color: orange;
+    border: 1px solid #000;
+}
+
+.encabezado{
+    background-color: blue;
+    color: white;
+    grid-column: 1 / 5; 
+}
+
+.texto{
+    background-color: green;
+    color: white;
+    grid-row: 2 / 5; 
+}
+
+.new-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 3px;
+}
+
+.item2{
+    text-align: center;
+    background-color: red;
+    border: 1px solid #000;
+}

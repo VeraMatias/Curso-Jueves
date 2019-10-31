@@ -1,0 +1,46 @@
+/*h1{
+    font-size: 80px;
+    color: blue;
+}
+
+p{
+    font-size: 40px;
+    background-color: yellow;
+    color: red;
+}
+
+@media(max-width: 1024px){
+    h1{
+        font-size: 40px;
+        color: red;
+    }
+}*/
+
+/* Mobile First */
+
+@import url('../styles.css');
+
+h1{
+    font-size: 40px;
+    color: red;
+}
+
+p{
+    background-color: black;
+    color: white;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 25px;
+}
+
+@media all and (min-width: 1024px)
+{
+    h1{
+        font-size: 80px;
+        color: blue;
+    }
+
+    p{
+        background-color: salmon;
+    }
+}
